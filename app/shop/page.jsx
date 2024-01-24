@@ -1,10 +1,14 @@
 'use client';
 
 import React from 'react';
+import NavBar from '@/components/NavBar';
 
 const Shop = () => {
   return (
-    <div>page</div>
+    <div>
+      shop
+      <NavBar />
+    </div>
   )
 }
 

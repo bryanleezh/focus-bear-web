@@ -1,10 +1,14 @@
 'use client';
 
 import React from 'react';
+import NavBar from '@/components/NavBar';
 
 const Stats = () => {
   return (
-    <div>stats</div>
+    <div>
+        stats
+        <NavBar />
+    </div>
   )
 }
 
