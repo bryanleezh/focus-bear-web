@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <div className="fixed bottom-0 w-full h-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 flex items-center justify-around">
-      <Link className="flex flex-col items-center" href="/home">
+      <Link className="flex flex-col items-center" href="/">
         {/* Icon can be changed the custom SVG that we drew */}
         <HomeIcon className="h-6 w-6" />
         <span className="text-xs">Home</span>
