@@ -2,15 +2,14 @@
 
 import React from 'react';
 import NavBar from '@/components/NavBar';
-import FullShop from '@/components/FullShop';
 
-const Shop = () => {
+const Profile = () => {
   return (
     <div>
-      <FullShop />
-      <NavBar />
+        Profile
+        <NavBar />
     </div>
   )
 }
 
-export default Shop;
+export default Profile;
