@@ -16,6 +16,7 @@ export default function FullShop() {
 
     const buyItem = () => {
         setIsWelcome(false);
+        setItemAdded(false);
         setItemConfirmation(true);
     }
 
