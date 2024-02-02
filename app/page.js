@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <ProgressTracker />
+      <ProgressTracker currency={1257} />
       <NavBar />
     </div>
   );

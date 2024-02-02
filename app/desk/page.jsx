@@ -7,7 +7,7 @@ import DeskCollection from '@/components/DeskCollection';
 const Desk = () => {
   return (
     <div>
-        <DeskCollection />
+        <DeskCollection currency={1257} />
         <NavBar />
     </div>
   )

@@ -7,7 +7,7 @@ import FullShop from '@/components/FullShop';
 const Shop = () => {
   return (
     <div>
-      <FullShop />
+      <FullShop currency={1257}/>
       <NavBar />
     </div>
   )
