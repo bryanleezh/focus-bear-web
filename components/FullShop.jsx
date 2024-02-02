@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function FullShop() {
+export default function FullShop(props) {
     // welcome prompt flag
     const [isWelcome, setIsWelcome] = React.useState(true);
     // clicking item prompt flag
@@ -35,9 +35,9 @@ export default function FullShop() {
 
     return (
         <div className="flex flex-col items-center justify-center h-screen" style={{ backgroundImage: `url('/background3.png')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-            <div className="absolute top-4 right-4 flex items-center gap-2 bg-white bg-opacity-50 dark:bg-gray-800 p-2 rounded-lg shadow-md">
+            <div className="absolute top-4 left-4 flex items-center gap-2 bg-white bg-opacity-50 dark:bg-gray-800 p-2 rounded-lg shadow-md">
                 <img alt="Coin Icon" className="w-5 h-5" src="/coin.png" />
-                <span className="text-sm font-bold">1257</span>
+                <span className="text-sm font-bold">{props.currency}</span>
             </div>
             <div className="flex items-center justify-center" style={{ position: 'absolute', top: '128px', left:'50px' }}>
                 <img onClick={buyItem} alt="plant" src={`/plant.svg`} width={96}/>
@@ -51,16 +51,14 @@ export default function FullShop() {
             <div className="flex items-center justify-center" style={{ position: 'absolute', top: '300px', left:'40px' }}>
                 <img onClick={buyItem} alt="mug" src={`/mug.svg`} width={96}/>
             </div> 
-            {isWelcome ? 
+            {isWelcome && (
                 <div className="flex items-center justify-center" style={{ position: 'absolute', bottom: '265px', right:'50px' }}>
                     <img onClick={welcomeEnd} alt="chat bubble" src={`/welcome_chat_bubble.svg`} width={256}/>
                 </div>
-                :
-                <></>
-            }
+            )}
             {/* buying items */}
             {
-                itemConfirmation ? 
+                itemConfirmation && (
                 <div>
                     <div className="flex items-center justify-center" style={{ position: 'absolute', bottom: '265px', right:'50px' }}>
                         <img alt="chat bubble" src={`/buy_chat_bubble.png`} width={256}/>
@@ -72,18 +70,14 @@ export default function FullShop() {
                         <img onClick={buyConfirmation} alt="yes button" src={`/yes_button.svg`} width={72}/>
                     </div>
                 </div>
-                : 
-                <></>
-            }
+            )}
             {/* item added to desk */}
             {
-                itemAdded ?
+                itemAdded && (
                 <div className="flex items-center justify-center" style={{ position: 'absolute', bottom: '265px', right:'50px' }}>
                     <img onClick={closeConfirmation} alt="purchased bubble" src={`/confirmation_chat_bubble.svg`} width={256}/>
                 </div>
-                : 
-                <></>
-            }
+            )}
             
         </div>
     )
