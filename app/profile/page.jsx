@@ -2,11 +2,12 @@
 
 import React from 'react';
 import NavBar from '@/components/NavBar';
+import ProfileCard from '@/components/ProfileCard';
 
 const Profile = () => {
   return (
     <div>
-        Profile
+        <ProfileCard currency={1257} />
         <NavBar />
     </div>
   )
