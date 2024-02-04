@@ -4,6 +4,7 @@ import React from "react";
 
 export default function ProgressTracker(props) {
     const [completeFocus, setCompleteFocus] = React.useState(false);
+    const [timerComplete, setTimerComplete] = React.useState(false);
     const [isHatched, setIsHatched] = React.useState(false);
     const [isClaimed, setIsClaimed] = React.useState(false);
     const [isFailHatch, setIsFailHatch] = React.useState(false);
@@ -44,6 +45,7 @@ export default function ProgressTracker(props) {
         setIsFailHatch(false);
         setCompleteFocus(false);
         setIsClaimed(false);
+        setTimerComplete(false);
         setTime({ hours: 0, minutes: 0, seconds: 0 });
     }
 
@@ -53,6 +55,11 @@ export default function ProgressTracker(props) {
                 const newSeconds = prevTime.seconds === 59 ? 0 : prevTime.seconds + 1;
                 const newMinutes = prevTime.seconds === 59 ? prevTime.minutes + 1 : prevTime.minutes;
                 const newHours = prevTime.minutes === 59 && prevTime.seconds === 59 ? prevTime.hours + 1 : prevTime.hours;
+                
+                if (newMinutes === 15) {
+                    setTimerComplete(true);
+                }
+
                 return {hours: newHours, minutes: newMinutes, seconds: newSeconds };
             });
         }, 1000);
@@ -71,7 +78,6 @@ export default function ProgressTracker(props) {
                 <img alt="Coin Icon" className="w-5 h-5" src="/coin.png" />
                 <span className="text-sm font-bold">{props.currency}</span>
             </div>
-            {/* conditional render here */}
             {completeFocus ? 
                 // conditional render fail or no fail
                 (
@@ -137,9 +143,16 @@ export default function ProgressTracker(props) {
                         </div>
                     </div>
                     <div className="w-full max-w-md relative" style={{ backgroundColor: 'inherit' }}>
+                        {timerComplete ?
                         <div className="flex justify-center">
-                            <img alt="unhatched" src={`/egg.svg`} className="rounded-lg" width={192} />
+                            <img alt="unhatched" src={`/egg_love.svg`} className="rounded-lg" width={192} />
                         </div>
+                        :
+                        <div className="flex justify-center">
+                            <img alt="hatching" src={`/egg.svg`} className="rounded-lg" width={192} />
+                        </div>
+                        }
+                        
                     </div>
                     <div className="flex items-center gap-4">
                         {isFocused ? 
