@@ -7,8 +7,8 @@ import ProfileCard from '@/components/ProfileCard';
 const Profile = () => {
   return (
     <div>
-        <ProfileCard currency={1257} />
-        <NavBar />
+      <ProfileCard currency={1257} />
+      <NavBar />
     </div>
   )
 }
