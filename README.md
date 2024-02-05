@@ -6,8 +6,8 @@ This prototype was built in a week to test the idea of a productivity applicatio
 https://focus-bear-web.vercel.app/
 
 ## Screenshots
-![](./src/lib/Screenshots/home/homestart.png)
-![](./src/lib/Screenshots/home/home_reward.png)
+![](@/lib/Screenshots/home/homestart.png)
+![](@/lib/Screenshots/home/home_reward.png)
 
 ## Features
 
