@@ -7,19 +7,18 @@ https://focus-bear-web.vercel.app/
 
 ## Screenshots
 <img src="./lib/Screenshots/home/homestart.png" alt="Home Start" width="400">
-![](./lib/Screenshots/home/homestart.png)
-![](./lib/Screenshots/home/home_reward.png)
+<img src="./lib/Screenshots/home/home_reward.png" alt="Home Start" width="400">
 
 ## Features
 
 _Focus Tracker_: Tracks how long user focuses, if focus session extends pass 15 minutes, a reward will pop up, otherwise the egg will fail to hatch
-![](./lib/Screenshots/home/home_failed.png)
+<img src="./lib/Screenshots/home/home_failed.png" alt="Home Start" width="400">
 
 _Shop_: User will be able to purchase items from the shop and decorate their own desks
-![](./lib/Screenshots/desk/shop.png)
+<img src="./lib/Screenshots/desk/shop.png" alt="Home Start" width="400">
 
 _Profile Information_: Profile information, with calculations for average hours focused each day etc
-![](./lib/Screenshots/profile/profileinfo.png)
+<img src="./lib/Screenshots/profile/profileinfo.png" alt="Home Start" width="400">
 
 ## Expansion
 
