@@ -40,33 +40,17 @@ export default function ProfileCard(props)  {
             <div className="w-full max-w-sm mx-auto mt-8">
                 <div className="space-y-4">
                     {/* TODO: add data into this then do data.map */}
-                    <div className="grid grid-cols-3 items-center gap-4 p-4 border rounded-lg">
-                        <div className="col-span-2">
-                            <div className="text-lg font-bold">Date: 01/01/2024</div>
-                            <div className="text-sm">Time: 10:00 AM - 12:00 PM</div>
+                    { focusSessions.map((item, index) => (
+                        <div key={item.focusSessionid} className="grid grid-cols-3 items-center gap-4 p-4 border rounded-lg">
+                            <div className="col-span-2">
+                                <div className="text-lg font-bold">{item.date}</div>
+                                <div className="text-sm">{item.time}</div>
+                            </div>
+                            <Link className='flex items-center justify-center' href={item.focusSessionURL}>
+                                <ArrowBigRight className="h-5 w-5" />
+                            </Link>
                         </div>
-                        <Link className='flex items-center justify-center' href="/focus">
-                            <ArrowBigRight className="h-5 w-5" />
-                        </Link>
-                    </div>
-                    <div className="grid grid-cols-3 items-center gap-4 p-4 border rounded-lg">
-                        <div className="col-span-2">
-                            <div className="text-lg font-bold">Date: 02/01/2024</div>
-                            <div className="text-sm">Time: 02:00 PM - 04:00 PM</div>
-                        </div>
-                        <Link className='flex items-center justify-center' href="/focus">
-                            <ArrowBigRight className="h-5 w-5" />
-                        </Link>
-                    </div>
-                    <div className="grid grid-cols-3 items-center gap-4 p-4 border rounded-lg">
-                        <div className="col-span-2">
-                            <div className="text-lg font-bold">Date: 03/01/2024</div>
-                            <div className="text-sm">Time: 06:00 PM - 08:00 PM</div>
-                        </div>
-                        <Link className='flex items-center justify-center' href="/focus">
-                            <ArrowBigRight className="h-5 w-5" />
-                        </Link>
-                    </div>
+                    )) }
                 </div>
             </div>
           </div>
