@@ -1,5 +1,6 @@
 import React from 'react';
 import WebView from '@/components/WebView';
+import NavBar from '@/components/NavBar';
 import { getSelectorsByUserAgent} from 'react-device-detect';
 import { headers } from 'next/headers';
 
