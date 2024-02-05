@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Focus Bear Web Prototype
 
-## Getting Started
+Built in Next.js, this is a prototype of a productivity application, with barebones functionality, used to help students focus better.
+This prototype was built in a week to test the idea of a productivity application before moving on to the mobile development phase, where the features are more built out in depth.
 
-First, run the development server:
+https://focus-bear-web.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Screenshots
+![](./src/lib/Screenshots/home/homestart.png)
+![](./src/lib/Screenshots/home/home_reward.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+_Focus Tracker_: Tracks how long user focuses, if focus session extends pass 15 minutes, a reward will pop up, otherwise the egg will fail to hatch
+![](./src/lib/Screenshots/home_failed.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+_Shop_: User will be able to purchase items from the shop and decorate their own desks
+![](./src/lib/Screenshots/profile/shop.png)
 
-## Learn More
+_Profile Information_: Profile information, with calculations for average hours focused each day etc
+![](./src/lib/Screenshots/profile/profileinfo.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Expansion
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Moving on from the prototype, there are several features that will be implemented:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- _User login_: Allow for account creation to keep track of individual users' information, currency and sessions
+- _Dynamic Shop Item Placement_: Creating an app to cater to so many devices in our age is definitely not easy, so being able to support most devices would be great for usability.
+- _More Items + Pets_: Having more items and pets that would be randomized rewards, keeping track of which items have been collected would allow for collecting items to be more fun
+- _User Analytics_: Analyze individuals' focus patterns and encourage more/less time focusing will create a more personalized experience for the users 
