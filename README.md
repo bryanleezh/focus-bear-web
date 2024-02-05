@@ -6,16 +6,16 @@ This prototype was built in a week to test the idea of a productivity applicatio
 https://focus-bear-web.vercel.app/
 
 ## Screenshots
-![](./lib/Screenshots/home/homestart.png)
+![](./lib/Screenshots/home/homestart.png){width=200px}
 ![](./lib/Screenshots/home/home_reward.png)
 
 ## Features
 
 _Focus Tracker_: Tracks how long user focuses, if focus session extends pass 15 minutes, a reward will pop up, otherwise the egg will fail to hatch
-![](./lib/Screenshots/home_failed.png)
+![](./lib/Screenshots/home/home_failed.png)
 
 _Shop_: User will be able to purchase items from the shop and decorate their own desks
-![](./lib/Screenshots/profile/shop.png)
+![](./lib/Screenshots/desk/shop.png)
 
 _Profile Information_: Profile information, with calculations for average hours focused each day etc
 ![](./lib/Screenshots/profile/profileinfo.png)
