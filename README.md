@@ -13,6 +13,7 @@ https://focus-bear-web.vercel.app/
 
 _Focus Tracker_: Tracks how long user focuses, if focus session extends pass 15 minutes, a reward will pop up, otherwise the egg will fail to hatch
 
+
 <img src="./lib/Screenshots/home/home_failed.png" alt="Home failed" width="400">
 
 _Shop_: User will be able to purchase items from the shop and decorate their own desks
