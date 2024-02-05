@@ -22,7 +22,6 @@ export default function ProgressTracker(props) {
         clearInterval(intervalRef.current);
 
         // * Check progress
-        console.log(time);
         if (time.hours > 0 || time.minutes >= 15) {
             // hatch successful
             setIsHatched(true);
